@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NHL Goal Distribution per minute by team</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/screen.css" type="text/css" />
+</head>
+<body>
+
+  <header>
+    <h1>NHL Goal Distribution per minute by team</h1>
+    <p>It was the 2013-2014 NHL season and it felt like every other game the Red Wings played, they gave up a goal in the last minute of the game, mostly to lose the game or have the opponent force overtime.</p>
+    <p>With that, I looked to see just how often this happened with Detroit, and every team in the NHL.</p>
+    <h2>A few findings in the data</h2>
+    <ul>
+      <li>The Red Wings <b>did</b> in fact give up the most goals in the last minute of the game (-10).</li>
+      <li>About a third of the teams, even ones with a large negative differential, have a positive progression of goals in the last three to four minutes of regulation.</li>
+      <li>For a large number of teams, there are very few goals for or against in the first minute of a game, but often the opposite in the last minute of the game.</li>
+    </ul>
+    <div class="control">
+      <label>
+        Select a team (or view all)
+        <select>
+          <option value="all">All Teams</option>
+          <option value="bos">Boston Bruins</option>
+          <option value="ana">Anaheim Ducks</option>
+          <option value="stl">St. Louis Blues</option>
+          <option value="sjs">San Jose Sharks</option>
+          <option value="chi">Chicago Blackhawks</option>
+          <option value="pit">Pittsburgh Penguins</option>
+          <option value="lak">Los Angeles Kings</option>
+          <option value="col">Colorado Avalanche</option>
+          <option value="tbl">Tampa Bay Lightning</option>
+          <option value="nyr">New York Rangers</option>
+          <option value="cbj">Columbus Blue Jackets</option>
+          <option value="mtl">Montreal Canadians</option>
+          <option value="dal">Dallas Stars</option>
+          <option value="phi">Philadelphia Flyers</option>
+          <option value="min">Minnesota Wild</option>
+          <option value="wsh">Washington Capitals</option>
+          <option value="det" selected>Detroit Red Wings</option>
+          <option value="wpg">Winnipeg Jets</option>
+          <option value="njd">New Jersey Devils</option>
+          <option value="phx">Phoenix(Arizona) Coyotes</option>
+          <option value="car">Carolina Hurricanes</option>
+          <option value="tor">Toronto Maple Leafs</option>
+          <option value="nsh">Nashville Predators</option>
+          <option value="van">Vancouver Canucks</option>
+          <option value="ott">Ottawa Senators</option>
+          <option value="cgy">Calgary Flames</option>
+          <option value="nyi">New York Islanders</option>
+          <option value="edm">Edmonton Oilers</option>
+          <option value="fla">Florida Panthers</option>
+          <option value="buf">Buffalo Sabres</option>
+        </select>
+        <small>Ordered by goal differential</small>
+      </label>
+    </div>
+  </header>
+
+  <div class="wrap"></div>
+  <footer>
+    <p class="left">Data from <a href="http://www.nhl.com">NHL.com</a>.</p>
+    <p class="right">* SO - A shootout win counts as a goal for for the winning team and a goal against for the losing team.</p>
+  </footer>
+
+    <script src="js/d3.js"></script>
+    <script src="js/d3-line-graph.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

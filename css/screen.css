@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #333;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0 0 20px 20px;
+}
+
+h1 {
+  font-size: 150%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 100%;
+  margin-bottom: 20px;
+}
+
+header,
+.wrap,
+footer {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+footer {
+  font-size: 70%;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.control {
+  background: #eee;
+  padding: 10px;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+ .axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+    stroke: #ccc;
+}
+
+.axis.light line {
+    stroke: #ccc;
+    stroke-dasharray: 4, 2;
+}
+
+.y.axis:not(.light) text {
+    fill: none;
+    stroke: none;
+}
+
+rect {
+  shape-rendering: crispEdges;
+}
+
+.positive {
+    fill: #147F14;
+}
+.negative {
+    fill: #901616;
+}
+
+text {
+    font-size: 70%;
+}
+
+.period-bg {
+    fill: #fff;
+}
+
+.period-bg.odd {
+    fill: #f4f4f4;
+}
+
+.period-text {
+    fill: #888;
+}
+
+.row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+.row > div {
+  position: relative;
+  clear: left;
+}
+
+.stat {
+  float: left;
+  width: 100px;
+  height: 40px;
+  padding: 20px 0 0 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.stat-wrap.for .stat {
+  margin-top: 25px;
+}
+
+.stat h3 {
+  font-size: 13px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  color: #777;
+}
+
+.value.positive { color: #147F14; }
+.value.negative { color: #901616; }
+
+.goals {
+  width: 900px;
+  float: left;
+}
+
+.tt {
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  position: absolute;
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid #aaa;
+  font-size: 11px;
+  width: 30px;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.tt::before {
+  content: '';
+  border-top: 8px solid #aaa;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 6px;
+}
+
+.tt::after {
+  content: '';
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -6px;
+  left: 8px;
+}
+
+.tt.show {
+  opacity: 1;
+}
